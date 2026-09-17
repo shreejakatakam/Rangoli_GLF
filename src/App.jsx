@@ -3,7 +3,6 @@ import { useState } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Packages from "./pages/Packages";
-import Guidelines from "./pages/Guidelines";
 import Contact from "./pages/Contact";
 import Register from "./pages/Register";
 import CheckRegistration from "./pages/CheckRegistration";
@@ -76,7 +75,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/packages" element={<Packages />} />
-            <Route path="/guidelines" element={<Guidelines />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/register" element={<Register />} />
             <Route path="/check-registration" element={<CheckRegistration />} />

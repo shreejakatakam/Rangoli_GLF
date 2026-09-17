@@ -1,75 +1,102 @@
-function Packages() {
+import React from "react";
+
+const Packages = () => {
   return (
-    <div className="inner-page">
-      <div className="page-hero">
-        <div className="eyebrow">PARTICIPATION OPTIONS</div>
-        <h1>Registration Packages</h1>
-        <p>Choose the package that suits your participation.</p>
-      </div>
+    <div className="packages-page">
+      {/* Header Section */}
+      <section className="packages-header">
+        <div className="header-decoration-left">❖</div>
+        <div className="header-content">
+          <h1 className="packages-title">
+            Choose Your <span>Package</span>
+          </h1>
+          <p className="packages-subtitle">
+            Participate at your preferred level and get amazing benefits
+          </p>
+          <div className="header-divider">❖</div>
+        </div>
+        <div className="header-decoration-right">❖</div>
+      </section>
 
-      <section className="content-section">
-        <div className="package-grid">
-          <div className="package-card">
-            <h3>District Level</h3>
+      {/* Package Cards Section */}
+      <section className="packages-grid">
+        {/* Package 1: ₹299 */}
+        <div className="package-card card-pink-package">
+          <div className="package-price">₹299</div>
+          <div className="package-level">District Level</div>
 
-            <div className="price">₹299</div>
+          <ul className="package-features">
+            <li>
+              <span className="feature-icon">📜</span>
+              Certificate
+            </li>
+            <li>
+              <span className="feature-icon">🎁</span>
+              Prize
+            </li>
+          </ul>
 
-            <div className="package-line" />
+          <a href="/register" className="package-button btn-pink">
+            Register ₹299 →
+          </a>
+        </div>
 
-            <ul>
-              <li>✓ Certificate</li>
-              <li>✓ Prize</li>
-            </ul>
+        {/* Package 2: ₹599 */}
+        <div className="package-card card-purple-package">
+          <div className="package-price">₹599</div>
+          <div className="package-level">District Level</div>
 
-            <a href="/register" className="package-button">
-              Register with ₹299
-            </a>
-          </div>
+          <ul className="package-features">
+            <li>
+              <span className="feature-icon">📜</span>
+              Certificate
+            </li>
+            <li>
+              <span className="feature-icon">🏆</span>
+              Trophy
+            </li>
+            <li>
+              <span className="feature-icon">🎁</span>
+              Prize
+            </li>
+          </ul>
 
-          <div className="package-card popular">
-            <div className="package-badge">POPULAR</div>
+          <a href="/register" className="package-button btn-purple">
+            Register ₹599 →
+          </a>
+        </div>
 
-            <h3>District Level</h3>
+        {/* Package 3: ₹1,499 */}
+        <div className="package-card card-gold-package">
+          <div className="package-price">₹1,499</div>
+          <div className="package-level">Direct State Level</div>
 
-            <div className="price">₹599</div>
+          <ul className="package-features">
+            <li>
+              <span className="feature-icon">📜</span>
+              Certificate
+            </li>
+            <li>
+              <span className="feature-icon">🏆</span>
+              Trophy
+            </li>
+            <li>
+              <span className="feature-icon">🎁</span>
+              Prize
+            </li>
+            <li>
+              <span className="feature-icon">🏅</span>
+              Award
+            </li>
+          </ul>
 
-            <div className="package-line" />
-
-            <ul>
-              <li>✓ Certificate</li>
-              <li>✓ Trophy</li>
-              <li>✓ Prize</li>
-            </ul>
-
-            <a href="/register" className="package-button">
-              Register with ₹599
-            </a>
-          </div>
-
-          <div className="package-card">
-            <div className="package-badge state">DIRECT STATE ENTRY</div>
-
-            <h3>Direct State Level</h3>
-
-            <div className="price">₹1,500</div>
-
-            <div className="package-line" />
-
-            <ul>
-              <li>✓ Certificate</li>
-              <li>✓ Trophy</li>
-              <li>✓ Prize</li>
-              <li>✓ Award</li>
-            </ul>
-
-            <a href="/register" className="package-button">
-              Register with ₹1,500
-            </a>
-          </div>
+          <a href="/register" className="package-button btn-gold">
+            Register ₹1,499 →
+          </a>
         </div>
       </section>
     </div>
   );
-}
+};
 
 export default Packages;
